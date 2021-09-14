@@ -2,7 +2,7 @@
 www.w3schools.com/sql 공부 중
 
 
-##SQL명령어 일부
+## SQL명령어 일부
 SELECT - 데이터베이스에서 데이터 추출
 UPDATE - 데이터베이스의 데이터 업데이트
 DELETE - 데이터베이스에서 데이터 삭제
