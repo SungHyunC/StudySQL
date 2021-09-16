@@ -84,20 +84,20 @@ WHERE CustomerID=1;
 ```
 WHERE 절의 연산자
 
-= / Equal
+= : Equal
 
-> / Greater than
+> : Greater than
 
-< / Less than
+< : Less than
 
->= / Greater than or equal
+>= : Greater than or equal
 
-<= / Less than or equal
+<= : Less than or equal
 
-<> / Not equal. Note: In some versions of SQL this operator may be written as !=
+<> : Not equal. Note: In some versions of SQL this operator may be written as !=
 
-BETWEEN / 특정 범위의 사이
+BETWEEN : 특정 범위의 사이
 
-LIKE / Search for a pattern
+LIKE : Search for a pattern
 
-IN / 열에 대해 가능한 값을 여러 개 지정하는 방법
+IN : 열에 대해 가능한 값을 여러 개 지정하는 방법
