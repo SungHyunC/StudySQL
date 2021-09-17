@@ -101,3 +101,57 @@ BETWEEN : 특정 범위의 사이
 LIKE : Search for a pattern
 
 IN : 열에 대해 가능한 값을 여러 개 지정하는 방법
+
+## SQL AND, OR 및 NOT 연산자
+AND, OR, NOT WHERE 와 결합할 수 있다.
+### AND 구문 and Example
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+```
+"Customers"에서 모든 필드를 선택하며, 국가는 "Germany" 도시는 "Berlin"이다.
+```
+SELECT * FROM Customers
+WHERE Country='Germany' AND City='Berlin';
+```
+
+### OR 구문 or Example
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+```
+도시가 "Berlin" 또는 "München"인 "Customers"에서 모든 필드를 선택한다.
+```
+SELECT * FROM Customers
+WHERE City='Berlin' OR City='München';
+```
+"Cusomers"에서 국가가 "Germany" 또는 "Spain"인 모든 필드를 선택한다.
+```
+SELECT * FROM Customers
+WHERE Country='Germany' OR Country='Spain';
+```
+### NOT 구문 or Example
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+```
+국가가 "Germany"이 아닌 "Customers"에서 모든 필드를 선택한다.
+```
+SELECT * FROM Customers
+WHERE NOT Country='Germany';
+```
+
+### AND, OR 및 NOT 결합
+"Customers"에서 모든 필드를 선택하며, 여기서 국가는 "Germany"이고 도시는 "Berlin"이어야 한다. OR "München"
+```
+SELECT * FROM Customers
+WHERE Country='Germany' AND (City='Berlin' OR City='München');
+```
+국가가 있는 "Customers"에서 모든 필드를 선택한다. "Germany"도 아니고 "USA"도 아니다.
+```
+SELECT * FROM Customers
+WHERE NOT Country='Germany' AND NOT Country='USA';
+```
