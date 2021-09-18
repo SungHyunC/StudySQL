@@ -155,3 +155,32 @@ WHERE Country='Germany' AND (City='Berlin' OR City='München');
 SELECT * FROM Customers
 WHERE NOT Country='Germany' AND NOT Country='USA';
 ```
+## SQL ORDER BY KEYWORD
+ORDER BY 키워드를 사용하여 결과 집합을 오름차순 또는 내림차순으로 정렬한다.
+기본적으로 레코드를 오름차순으로 정렬한다. 레코드를 내림차순으로 정렬하면 DESC 키워드
+```
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+```
+### ORDER BY 예제
+```
+SELECT * FROM Customers;
+ORDER BY Country;
+```
+### DESC 예제
+```
+SELECT * FROM Customers
+ORDER BY Country DESC;
+```
+### 여러 열로 정렬 예제
+NO.1
+```
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+```
+NO.2
+```
+SELECT * FROM Customers
+ORDER BY COuntry ASC, CustomerName DESC;
+```
