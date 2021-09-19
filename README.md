@@ -184,3 +184,21 @@ NO.2
 SELECT * FROM Customers
 ORDER BY COuntry ASC, CustomerName DESC;
 ```
+## SQL INSERT INTO
+INSERT INTO 문장은 표에 새 레코드를 삽입하는 데 사용된다.
+
+예시1
+```
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+예시2
+```
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+```
+지정된 열에만 데이터 삽입도 가능합니다.
+```
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');
+```
