@@ -202,3 +202,29 @@ VALUES (value1, value2, value3, ...);
 INSERT INTO Customers (CustomerName, City, Country)
 VALUES ('Cardinal', 'Stavanger', 'Norway');
 ```
+
+## SQL NULL Values
+NULL 값을 가진 필드는 값이 없는 필드다.
+
+예시1 IS NULL Syntax
+```
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+```
+```
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;
+```
+예시2 IS NOT NULL Syntax
+```
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+```
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NOT NULL;
+```
