@@ -228,3 +228,29 @@ SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NOT NULL;
 ```
+## SQL UPDATE 
+UPDATE 문장은 표의 기존 기록을 수정하는 데 사용된다.
+
+UPDATE 구문
+```
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+예시1
+```
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+```
+여러 레코드 UPDATE
+```
+UPDATE Customers
+SET ContactName='Juan'
+WHERE Country='Mexico';
+```
+주의 : UPDATE 문을 쓸때는 WHERE를 생략하게 된다면 모든 레코드가 업데이트 됩니다
+```
+UPDATE Customers
+SET ContactName='Juan';
+```
