@@ -254,3 +254,19 @@ WHERE Country='Mexico';
 UPDATE Customers
 SET ContactName='Juan';
 ```
+## SQL DELETE 
+DELETE 문장은 테이블의 기존 레코들르 삭제하는 데 사용된다.
+예시
+```
+DELETE FROM table_name WHERE condition;`
+```
+예제1 고객 "AAlfreds Futterkiste"를 Customers 에서 삭제
+```
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+```
+예제2 모든 레코드 삭제
+```
+DELETE FROM table_name;
+```
+
+
