@@ -269,4 +269,24 @@ DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
 DELETE FROM table_name;
 ```
 
+## SELECT TOP
+많은 데이터들 가운데 특정 개수의 데이터만 출력하고 싶을 때 사용된다.
+예시1
+```
+SELECT TOP 3 * FROM Customers;
+```
+동등한 예
+```
+SELECT * FROM Customers
+LIMIT 3;
+```
+예시2 레코드의 처음 50%를 "Customers" 에서
+```
+SELECT TOP 50 PERCENT * FROM Customers;
+```
+예시3 WHERE 절 추가
+```
+SELECT TOP 3 * FROM Customers
+WHERE Country='Germany';
+```
 
