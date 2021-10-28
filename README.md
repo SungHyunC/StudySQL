@@ -114,6 +114,7 @@ WHERE condition1 AND condition2 AND condition3 ...;
 ```
 SELECT * FROM Customers
 WHERE Country='Germany' AND City='Berlin';
+
 ```
 
 ### OR 구문 or Example
