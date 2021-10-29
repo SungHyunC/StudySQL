@@ -290,4 +290,29 @@ SELECT TOP 50 PERCENT * FROM Customers;
 SELECT TOP 3 * FROM Customers
 WHERE Country='Germany';
 ```
+## SQL MIN() and MAX() Functions
+
+MIN()
+```
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+```
+MAX()
+```
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+```
+
+Example
+```
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+```
+```
+SELECT MAX(Price) AS LargestPrice
+FROM Products;
+```
+
 
