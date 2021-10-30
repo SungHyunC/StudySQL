@@ -315,4 +315,38 @@ SELECT MAX(Price) AS LargestPrice
 FROM Products;
 ```
 
+## The SQL COUNT(), AVG() and SUM() Functions
+
+COUNT()
+```
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+```
+AVG()
+```
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+```
+SUM()
+```
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+```
+
+Example
+```
+SELECT COUNT(ProductID)
+FROM Products;
+
+SELECT AVG(Price)
+FROM Products;
+
+SELECT SUM(Quantity)
+FROM OrderDetails;
+
+```
+
 
