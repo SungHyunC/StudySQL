@@ -349,4 +349,12 @@ FROM OrderDetails;
 
 ```
 
+The SQL LIKE Operator
+
+LIKE 
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;
+```
 
