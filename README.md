@@ -358,3 +358,8 @@ FROM table_name
 WHERE columnN LIKE pattern;
 ```
 
+example
+```
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+```
