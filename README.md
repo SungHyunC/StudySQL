@@ -363,3 +363,16 @@ example
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'a%';
 ```
+## SQL IN Operator
+
+```
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+```
+
+```
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+```
