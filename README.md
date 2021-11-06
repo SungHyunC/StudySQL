@@ -396,3 +396,16 @@ example
 SELECT * FROM Products
 WHERE Price BETWEEN 10 AND 20;
 ```
+
+## SQL Aliases
+
+### Alias Column Syntax
+```
+SELECT column_name AS alias_name
+FROM table_name;
+```
+### Alias Table Syntax
+```
+SELECT column_name(s)
+FROM table_name AS alias_name;
+```
