@@ -409,3 +409,10 @@ FROM table_name;
 SELECT column_name(s)
 FROM table_name AS alias_name;
 ```
+## SQL JOIN
+
+```
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+```
