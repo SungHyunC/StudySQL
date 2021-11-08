@@ -416,3 +416,17 @@ SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ```
+##SQL INNER JOIN Keyword
+
+```
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+```
+example
+```
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+```
