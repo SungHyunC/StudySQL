@@ -445,3 +445,11 @@ FROM Customers
 LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 ORDER BY Customers.CustomerName;
 ```
+## SQL RIGHT JOIN Keyword
+
+```
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+```
