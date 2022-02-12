@@ -1,6 +1,6 @@
 # StudySQL
-www.w3schools.com/sql 공부 중
-
+www.w3schools.com/sql 공부 
+패스트캠퍼스로 다시 배울 예정
 
 ## SQL명령어 일부
 SELECT - 데이터베이스에서 데이터 추출
